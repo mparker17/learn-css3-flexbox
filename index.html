@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn CSS3 Flexbox</title>
+    <style>
+        .wrapper.first {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: flex;
+
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            flex-direction: row;
+        }
+        .wrapper.first > .sidebar-left {
+            background-color: red;
+
+            -webkit-flex: 1;
+            -mox-flex: 1;
+            flex: 1;
+        }
+        .wrapper.first > .main {
+            background-color: green;
+
+            -webkit-flex: 3;
+            -mox-flex: 3;
+            flex: 3;
+        }
+        .wrapper.first > .sidebar-right {
+            background-color: blue;
+
+            -webkit-flex: 1;
+            -mox-flex: 1;
+            flex: 1;
+        }
+
+        .wrapper.second {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: flex;
+
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper first">
+        <div class="sidebar-left">
+            Left sidebar.
+        </div>
+        <div class="main">
+            Main area.
+        </div>
+        <div class="sidebar-right">
+            Right sidebar.
+        </div>
+    </div>
+</body>
+</html>
