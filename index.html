@@ -43,10 +43,56 @@
             -moz-flex-direction: row;
             flex-direction: row;
         }
+        .wrapper.second > .sidebar-left {
+            background-color: magenta;
+
+            -webkit-flex: 1;
+            -mox-flex: 1;
+            flex: 1;
+
+            -webkit-order: 2;
+            -moz-order: 2;
+            order: 2;
+        }
+        .wrapper.second > .main {
+            background-color: yellow;
+
+            -webkit-flex: 3;
+            -mox-flex: 3;
+            flex: 3;
+
+            -webkit-order: 1;
+            -moz-order: 1;
+            order: 1;
+
+        }
+        .wrapper.second > .sidebar-right {
+            background-color: cyan;
+
+            -webkit-flex: 1;
+            -mox-flex: 1;
+            flex: 1;
+
+            -webkit-order: 3;
+            -moz-order: 3;
+            order: 3;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper first">
+        <div class="sidebar-left">
+            Left sidebar.
+        </div>
+        <div class="main">
+            Main area.
+        </div>
+        <div class="sidebar-right">
+            Right sidebar.
+        </div>
+    </div>
+
+    <div class="wrapper second">
         <div class="sidebar-left">
             Left sidebar.
         </div>
