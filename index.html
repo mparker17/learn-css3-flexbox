@@ -77,6 +77,43 @@
             -moz-order: 3;
             order: 3;
         }
+
+        /* Third. */
+        .wrapper.third {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: flex;
+
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            flex-direction: row;
+        }
+        .wrapper.third > .sidebar-left {
+            background-color: lightgrey;
+
+            -webkit-flex: 1;
+            -mox-flex: 1;
+            flex: 1;
+        }
+        .wrapper.third > .main {
+            background-color: darkgrey;
+
+            -webkit-flex: 3;
+            -mox-flex: 3;
+            flex: 3;
+
+        }
+        .wrapper.third > .sidebar-right {
+            background-color: dimgrey;
+
+            -webkit-flex: 1;
+            -mox-flex: 1;
+            flex: 1;
+
+            -webkit-break-before: always;
+            -moz-break-before: always;
+            break-before: always;
+        }
     </style>
 </head>
 <body>
@@ -93,6 +130,19 @@
     </div>
 
     <div class="wrapper second">
+        <div class="sidebar-left">
+            Left sidebar.
+        </div>
+        <div class="main">
+            Main area.
+        </div>
+        <div class="sidebar-right">
+            Right sidebar.
+        </div>
+    </div>
+
+    <!-- Third. -->
+    <div class="wrapper third">
         <div class="sidebar-left">
             Left sidebar.
         </div>
